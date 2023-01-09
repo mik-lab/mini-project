@@ -1,3 +1,86 @@
+/* Global */
+body {
+  margin: 0;
+  font-size: 16px;
+}
 
+.navigation {
+  padding: 12px 0;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+.navigation .brand {
+  color: #ccad5e;
+  margin: 0;
+  font-size: 40px;
+  font-family: "Lobster", cursive;
+}
+.navigation ul {
+  padding: 25px;
+  margin: 0;
+  list-style-type: none;
+}
+.navigation ul li {
+  display: inline-block;
+  margin: 0 30px;
+  position: relative;
+}
+.navigation ul li a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.navigation ul li ul {
+  display: none;
+}
+.navigation ul li ul li {
+  display: block;
+  padding: 5px;
+  text-align: left;
+}
+.navigation ul li:hover ul {
+  display: block;
+  position: absolute;
+  text-align: left;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+.splash {
+  color: white;
+  text-align: center;
+  height: 100vh;
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(https://i.postimg.cc/QCn1GtsX/pexels-nikolaos-dimou-1319459.jpg);
+}
+.splash h1 {
+  font-size: 70px;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+.splash h2 {
+  font-size: 40px;
+  font-family: "Kaushan Script", cursive;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+.splash .btn {
+  display: inline-block;
+  min-width: 160px;
+  margin: 24px auto 0 auto;
+  padding: 16px 25px;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  background-position: 100%;
+  background-color: #ccad5e;
+  color: #ecf0f1;
+  border-radius: 5px;
+  font-family: "Kaushan Script", cursive;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.splash-inner {
+  margin: 190px;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxXQUFBO0FBQ0E7RUFDQSxTQUFBO0VBQ0EsZUFBQTtBQ0NBOztBRENBO0VBQ0ksZUFBQTtFQUNBLG9DQUFBO0FDRUo7QURESTtFQUNJLGNBQUE7RUFDQSxTQUFBO0VBQ0EsZUFBQTtFQUNBLCtCQUFBO0FDR1I7QURESTtFQUNJLGFBQUE7RUFDQSxTQUFBO0VBQ0EscUJBQUE7QUNHUjtBRERRO0VBQ0kscUJBQUE7RUFDQSxjQUFBO0VBQ0Esa0JBQUE7QUNHWjtBRERZO0VBQ0EscUJBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7QUNHWjtBREFZO0VBQ0ksYUFBQTtBQ0VoQjtBREFnQjtFQUNJLGNBQUE7RUFDQSxZQUFBO0VBQ0EsZ0JBQUE7QUNFcEI7QURHUTtFQUNJLGNBQUE7RUFDQSxrQkFBQTtFQUNBLGdCQUFBO0FDRFo7O0FES0E7RUFDSSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxhQUFBO0VBQ0Esa0JBQUE7RUFDQSxrQ0FBQTtFQUNBLHNCQUFBO0VBQ0EsNEJBQUE7RUFDQSxzRkFBQTtBQ0ZKO0FER0k7RUFDSSxlQUFBO0VBQ0Esb0NBQUE7QUNEUjtBREdJO0VBQ0ksZUFBQTtFQUNBLHNDQUFBO0VBQ0Esb0NBQUE7QUNEUjtBREdJO0VBQ0kscUJBQUE7RUFDQSxnQkFBQTtFQUNBLHdCQUFBO0VBQ0Esa0JBQUE7RUFDQSxlQUFBO0VBQ0EscUJBQUE7RUFDQSxlQUFBO0VBQ0EsWUFBQTtFQUNBLHlCQUFBO0VBQ0EseUJBQUE7RUFDQSxjQUFBO0VBQ0Esa0JBQUE7RUFDQSxzQ0FBQTtFQUNBLG9DQUFBO0FDRFI7O0FES0E7RUFDSSxhQUFBO0FDRkoiLCJmaWxlIjoic3R5bGUuY3NzIn0= */

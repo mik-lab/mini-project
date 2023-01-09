@@ -1,0 +1,87 @@
+/* Global */
+body{
+margin: 0; 
+font-size: 16px;  
+}
+.navigation{
+    padding: 12px 0; 
+    text-shadow: black 0.1em 0.1em 0.2em;
+    .brand{
+        color:#ccad5e;
+        margin: 0;
+        font-size: 40px;
+        font-family: 'Lobster', cursive;
+    }
+    ul{
+        padding: 25px;
+        margin: 0;
+        list-style-type: none; 
+        
+        li{
+            display: inline-block;
+            margin: 0 30px;
+            position: relative; 
+            
+            a{
+            text-decoration: none; 
+            color: white;
+            text-align: center;
+            }
+     
+            ul{
+                display: none;
+                
+                li{
+                    display: block;  
+                    padding: 5px; 
+                    text-align: left;
+                }
+            }
+        }
+        
+        li:hover ul{
+            display: block;
+            position: absolute;
+            text-align: left;
+        }
+    }
+}
+.splash{
+    color: white;
+    text-align: center;
+    height: 100vh;
+    position: relative; 
+    background-position: center center; 
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(https://i.postimg.cc/QCn1GtsX/pexels-nikolaos-dimou-1319459.jpg);
+    h1{
+        font-size: 70px;
+        text-shadow: black 0.1em 0.1em 0.2em;
+    }
+    h2{
+        font-size: 40px;
+        font-family: 'Kaushan Script', cursive;
+        text-shadow: black 0.1em 0.1em 0.2em;
+    }
+    .btn{
+        display: inline-block;
+        min-width: 160px; 
+        margin: 24px auto 0 auto;
+        padding: 16px 25px;  
+        font-size: 16px; 
+        text-decoration: none; 
+        cursor: pointer;  
+        border: none;  
+        background-position: 100%; 
+        background-color: #ccad5e;
+        color: #ecf0f1;
+        border-radius: 5px;
+        font-family: 'Kaushan Script', cursive;
+        text-shadow: black 0.1em 0.1em 0.2em;
+        
+}
+}
+.splash-inner{
+    margin: 190px;
+}
