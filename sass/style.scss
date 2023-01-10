@@ -11,7 +11,7 @@ font-size: 16px;
 text-align: center;
 }
 h1{
-    font-size: 70px;
+    font-size: 80px;
     text-shadow: $color-black 0.1em 0.1em 0.2em;
     font-family: $font-bald;
 }
@@ -121,8 +121,9 @@ z-index: 99;
     }
 }
 .splash{
+    text-align: center;
     color: $color-white;
-    height: 100vh;
+    height: 80vh;
     position: relative; 
     background-position: center center; 
     background-size: cover;
@@ -130,7 +131,7 @@ z-index: 99;
     background-image: url(https://i.postimg.cc/qR8m47v9/pexels-el-na-ar-ja-3377405.jpg);
 }
 .splash-inner{
-    margin: 190px;
+    margin: 0px;
 }
 .services{
     text-align: center;
@@ -206,7 +207,6 @@ z-index: 99;
 .footer{
     justify-content: center;
     display: flex;
-    flex-wrap: wrap;
     li{
     font-size: 0;
     margin: 30px 15px;
@@ -230,4 +230,16 @@ z-index: 99;
     display: flex;
     align-self:center;
 }
+}
+/* Media */
+
+@media (max-width: 767px) {
+    .page-title{
+        font-size: 50px;
+    }
+    .our-portfolio{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
 }
