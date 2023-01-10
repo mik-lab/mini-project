@@ -1,16 +1,23 @@
 /* Global */
+$color-white: white;
+$color-black: black;
+$color-gold: #ccad5e;
+$font-header: 'Lobster', cursive;
+$font-bald: 'Kanit', sans-serif;
+$font-italic: 'Kaushan Script', cursive;
 body{
 margin: 0; 
 font-size: 16px;  
 }
 .navigation{
     padding: 12px 0; 
-    text-shadow: black 0.1em 0.1em 0.2em;
+    text-shadow: $color-black 0.1em 0.1em 0.2em;
+    font-family: $font-bald;
     .brand{
-        color:#ccad5e;
+        color:$color-gold;
         margin: 0;
         font-size: 40px;
-        font-family: 'Lobster', cursive;
+        font-family: $font-header;
     }
     ul{
         padding: 25px;
@@ -24,7 +31,7 @@ font-size: 16px;
             
             a{
             text-decoration: none; 
-            color: white;
+            color: $color-white;
             text-align: center;
             }
      
@@ -47,7 +54,7 @@ font-size: 16px;
     }
 }
 .splash{
-    color: white;
+    color: $color-white;
     text-align: center;
     height: 100vh;
     position: relative; 
@@ -57,12 +64,13 @@ font-size: 16px;
     background-image: url(https://i.postimg.cc/QCn1GtsX/pexels-nikolaos-dimou-1319459.jpg);
     h1{
         font-size: 70px;
-        text-shadow: black 0.1em 0.1em 0.2em;
+        text-shadow: $color-black 0.1em 0.1em 0.2em;
+        font-family: $font-bald;
     }
     h2{
         font-size: 40px;
-        font-family: 'Kaushan Script', cursive;
-        text-shadow: black 0.1em 0.1em 0.2em;
+        font-family: $font-italic;
+        text-shadow: $color-black 0.1em 0.1em 0.2em;
     }
     .btn{
         display: inline-block;
@@ -74,14 +82,64 @@ font-size: 16px;
         cursor: pointer;  
         border: none;  
         background-position: 100%; 
-        background-color: #ccad5e;
+        background-color: $color-gold;
         color: #ecf0f1;
         border-radius: 5px;
-        font-family: 'Kaushan Script', cursive;
-        text-shadow: black 0.1em 0.1em 0.2em;
-        
+        font-family: $font-italic;
+        text-shadow: $color-black 0.1em 0.1em 0.2em;
+        opacity: 1;
+        transform: scale(1,1);
+        transition-timing-function: ease-out;
+        transition-duration: 250ms;
+        -webkit-transform: scale(1,1);
+        -webkit-transition-timing-function: ease-out;
+        -webkit-transition-duration: 250ms;
+        -moz-transform: scale(1,1);
+        -moz-transition-timing-function: ease-out;
+        -moz-transition-duration: 250ms;      
 }
+}
+.btn:hover {
+    opacity: .7;
+    transform: scale(1.05,1.07);
+    transition-timing-function: ease-out;
+    transition-duration: 250ms;
+    -webkit-transform: scale(1.05,1.07);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.05,1.07);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+    position: relative;
+    z-index: 99;
 }
 .splash-inner{
     margin: 190px;
+}
+.services{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.473);
+    font-size: 23px;
+    h3{
+        font-size: 45px;
+        color: $color-black;
+        margin-bottom: 0;
+        font-family: $font-bald;
+    }
+    h4{
+        margin-top: 0;
+        font-size: 16px;
+    }
+    h5{
+        color: $color-black;
+        font-family: $font-bald;
+    }
+    i{
+        font-size: 40px;
+        color: $color-gold;
+        margin-top: 75px;
+        border-color: $color-gold;
+        border-radius: 100%;
+        
+    }
 }
