@@ -8,6 +8,73 @@ $font-italic: 'Kaushan Script', cursive;
 body{
 margin: 0; 
 font-size: 16px;  
+text-align: center;
+}
+h1{
+    font-size: 70px;
+    text-shadow: $color-black 0.1em 0.1em 0.2em;
+    font-family: $font-bald;
+}
+h2{
+    font-size: 40px;
+    font-family: $font-italic;
+    text-shadow: $color-black 0.1em 0.1em 0.2em;
+}
+h3{
+    font-size: 45px;
+    color: $color-black;
+    margin-bottom: 0;
+    font-family: $font-bald;
+    text-align: center;
+}
+h4{
+    margin-top: 0;
+    font-size: 16px;
+}
+h5{
+    color: $color-black;
+    font-family: $font-bald;
+}
+.btn{
+    display: inline-block;
+    min-width: 160px; 
+    margin: 24px auto 0 auto;
+    padding: 16px 25px;  
+    font-size: 16px; 
+    text-decoration: none; 
+    cursor: pointer;  
+    border: none;  
+    background-position: 100%; 
+    background-color: $color-gold;
+    color: #ecf0f1;
+    border-radius: 5px;
+    font-family: $font-italic;
+    text-shadow: $color-black 0.1em 0.1em 0.2em;
+    opacity: 1;
+    transform: scale(1,1);
+    transition-timing-function: ease-out;
+    transition-duration: 250ms;
+    -webkit-transform: scale(1,1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1,1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;      
+}
+
+.btn:hover {
+opacity: .7;
+transform: scale(1.05,1.07);
+transition-timing-function: ease-out;
+transition-duration: 250ms;
+-webkit-transform: scale(1.05,1.07);
+-webkit-transition-timing-function: ease-out;
+-webkit-transition-duration: 250ms;
+-moz-transform: scale(1.05,1.07);
+-moz-transition-timing-function: ease-out;
+-moz-transition-duration: 250ms;
+position: relative;
+z-index: 99;
 }
 .navigation{
     padding: 12px 0; 
@@ -55,38 +122,61 @@ font-size: 16px;
 }
 .splash{
     color: $color-white;
-    text-align: center;
     height: 100vh;
     position: relative; 
     background-position: center center; 
     background-size: cover;
     background-attachment: fixed;
-    background-image: url(https://i.postimg.cc/QCn1GtsX/pexels-nikolaos-dimou-1319459.jpg);
-    h1{
-        font-size: 70px;
-        text-shadow: $color-black 0.1em 0.1em 0.2em;
-        font-family: $font-bald;
-    }
-    h2{
+    background-image: url(https://i.postimg.cc/qR8m47v9/pexels-el-na-ar-ja-3377405.jpg);
+}
+.splash-inner{
+    margin: 190px;
+}
+.services{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.473);
+    font-size: 23px;
+    i{
         font-size: 40px;
-        font-family: $font-italic;
-        text-shadow: $color-black 0.1em 0.1em 0.2em;
+        color: $color-gold;
+        margin-top: 75px;
+        border-color: $color-gold;
+        border-radius: 100%;
+        
     }
-    .btn{
+}
+.our-portfolio{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.473);
+    font-size: 23px;
+    background: #f5f6fa;
+    h5{
+        margin-bottom: 0;
+    }
+    h6{
+        margin-top: 0;
+    }
+    img{
+        height: 300px; 
+        width: 300px;
+        object-fit: cover;
+
+    }
+    .card{
+        background-color: $color-white;
+        max-width: 300px;
+        padding: 0;
+        margin: 30px;
+    }
+    .btn-img{
         display: inline-block;
-        min-width: 160px; 
-        margin: 24px auto 0 auto;
         padding: 16px 25px;  
-        font-size: 16px; 
+        font-size: 23px; 
         text-decoration: none; 
         cursor: pointer;  
         border: none;  
-        background-position: 100%; 
-        background-color: $color-gold;
-        color: #ecf0f1;
-        border-radius: 5px;
-        font-family: $font-italic;
-        text-shadow: $color-black 0.1em 0.1em 0.2em;
+        color: $color-black;
+        font-family: $font-bald;
         opacity: 1;
         transform: scale(1,1);
         transition-timing-function: ease-out;
@@ -97,49 +187,19 @@ font-size: 16px;
         -moz-transform: scale(1,1);
         -moz-transition-timing-function: ease-out;
         -moz-transition-duration: 250ms;      
-}
-}
-.btn:hover {
-    opacity: .7;
-    transform: scale(1.05,1.07);
-    transition-timing-function: ease-out;
-    transition-duration: 250ms;
-    -webkit-transform: scale(1.05,1.07);
-    -webkit-transition-timing-function: ease-out;
-    -webkit-transition-duration: 250ms;
-    -moz-transform: scale(1.05,1.07);
-    -moz-transition-timing-function: ease-out;
-    -moz-transition-duration: 250ms;
-    position: relative;
-    z-index: 99;
-}
-.splash-inner{
-    margin: 190px;
-}
-.services{
-    text-align: center;
-    color: rgba(0, 0, 0, 0.473);
-    font-size: 23px;
-    h3{
-        font-size: 45px;
-        color: $color-black;
-        margin-bottom: 0;
-        font-family: $font-bald;
     }
-    h4{
-        margin-top: 0;
-        font-size: 16px;
-    }
-    h5{
-        color: $color-black;
-        font-family: $font-bald;
-    }
-    i{
-        font-size: 40px;
-        color: $color-gold;
-        margin-top: 75px;
-        border-color: $color-gold;
-        border-radius: 100%;
-        
-    }
+    .btn-img:hover {
+        opacity: .7;
+        transform: scale(1.05,1.07);
+        transition-timing-function: ease-out;
+        transition-duration: 250ms;
+        -webkit-transform: scale(1.05,1.07);
+        -webkit-transition-timing-function: ease-out;
+        -webkit-transition-duration: 250ms;
+        -moz-transform: scale(1.05,1.07);
+        -moz-transition-timing-function: ease-out;
+        -moz-transition-duration: 250ms;
+        position: relative;
+        z-index: 99;
+        }
 }
